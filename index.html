@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+  <!-- Liens vers Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Lien CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- 🌙 Barre latérale -->
+  <div class="side-bare">
+    <div class="side-header">
+      <i class="fa-solid fa-chart-line"></i>
+      <p>Dashboard</p>
+    </div>
+
+    <div class="main">
+      <nav>
+        <ul>
+          <a href="#" onclick="chargerPage(event, 'Tab-board.html')"><i class="fa-solid fa-gauge"></i> <p>Tableau de Bord</p></a>
+          <a href="#" onclick="chargerPage(event, 'Analytic.html')"><i class="fa-solid fa-chart-line"></i> <p>Analytics</p></a>
+          <a href="#" onclick="chargerPage(event, 'commandes.html')"><i class="fa-solid fa-cart-shopping"></i> <p>Commandes</p></a>
+          <a href="#" onclick="chargerPage(event, 'paramètres.html')"><i class="fa-solid fa-gears"></i> <p>Paramètres</p></a>
+          <a href="#" onclick="chargerPage(event, 'rapport.html')"><i class="fa-solid fa-chart-bar"></i> <p>Rapport</p></a>
+          <a href="#" onclick="chargerPage(event, 'notifications.html')"><i class="fa-solid fa-bell"></i> <p>Notifications</p></a>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer">
+      <div class="Adm">
+        <i class="fa-solid fa-user"></i>
+        <span> 
+          <h3>Administrateur</h3>
+          <p>Gestionnaire</p>
+        </span>
+      </div>
+
+      <div><button><i class="fa-solid fa-user"></i> Mon profil</button></div>
+      <div><button><i class="fa-solid fa-right-to-bracket"></i> Déconnexion</button></div>
+    </div>
+  </div>
+
+  <!-- 🧩 Contenu principal -->
+  <div class="content">
+    <header>
+      <h2>Gestion des Stocks - Produits électroniques</h2>
+      <div>
+        <span><i class="fa-solid fa-bell"></i></span>
+        <span><i class="fa-solid fa-user"></i> Administrateur</span>
+      </div>
+    </header>
+
+    <iframe id="contenu" src="Tab-board.html"></iframe>
+  </div>
+
+  <!-- ⚙️ Script -->
+  <script>
+    function chargerPage(event, page) {
+      event.preventDefault();
+      document.getElementById('contenu').src = page;
+    }
+  </script>
+
+</body>
+</html>

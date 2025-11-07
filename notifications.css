@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
+}
+body{
+    background-color: aliceblue;
+    padding: 2rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-header-card{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.card{
+    background-color: white;
+    width: 250px;
+    padding: 2rem;
+    border-radius: 12px;
+}
+.top-select{
+    display: flex;
+    gap: 1rem;
+    width: 95%;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 12px;
+}
+.top-select div{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.top-select div select{
+    padding: 8px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+}
+.top-select div:nth-child(4){
+    justify-content: flex-end;
+    align-items: self-start;
+    width: 100px;
+
+}
+.top-select div:nth-child(4) button{
+background-color: rgb(53, 53, 202);
+color: white;
+width: 100px;
+border: none;
+padding: 12px;
+border-radius: 8px;
+}
+.order-card1,
+.order-card2,
+.order-card3 {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 2rem;
+    align-items: center;
+    width: 95%;
+    gap: 18px;
+    font-size: 1.04em;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.order-card1{
+        border-left: solid red 5px;
+}
+.order-card2{
+        border-left: solid rgb(0, 72, 255) 5px;
+}
+.order-header{
+        display: flex;
+            justify-content: space-between;
+}
+
+.order-header p{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.btn-btn-edit{
+    background-color: white;
+    border: solid 1px rgba(196, 188, 188, 0.289);
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+.btn-btn-view1{
+    background-color: rgba(163, 162, 162, 0.122);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+.btn-btn-view2{
+    background-color: #2561EB;
+    border: none;
+    color: white;
+  padding: 6px 12px;
+    border-radius: 5px;
+}
+.envoie{
+    background-color: #51BEEF;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+i{
+    color: black;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestion des Commandes</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="commandes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+  <div class="main-container">
+    <div class="header-title">
+      <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+      Gestion des Commandes
+    </div>
+    <div class="subtitle">Suivi et gestion complète des commandes clients</div>
+
+    <div class="stats-row">
+      <div class="stat-card">
+        <span class="stat-icon stat-yellow"><i class="fa-solid fa-clock"></i></span>
+        <div class="stat-content">
+          <div class="stat-value">23</div>
+          <div class="stat-label">En attente</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon stat-blue"><i class="fa-solid fa-gears"></i></span>
+        <div class="stat-content">
+          <div class="stat-value">45</div>
+          <div class="stat-label">En cours</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon stat-purple"> <i class="fa-solid fa-truck"></i> </span>
+        <div class="stat-content">
+          <div class="stat-value">67</div>
+          <div class="stat-label">Expédiées</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon stat-green"> <i class="fa-solid fa-circle-check"></i></span>
+        <div class="stat-content">
+          <div class="stat-value">234</div>
+          <div class="stat-label">Livrées</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filters-row">
+      <div class="fli1"> 
+        <span class="filter-label">Statut :</span>
+      <select>
+        <option>Tous les statuts</option>
+        <option>En attente</option>
+        <option>En cours</option>
+        <option>Expédiées</option>
+        <option>Livrées</option>
+      </select>
+    </div>
+    <div class="fli1">
+      <span class="filter-label">Période :</span>
+      <select>
+        <option>Aujourd'hui</option>
+        <option>Cette semaine</option>
+        <option>Ce mois</option>
+        <option>Personnalisée</option>
+      </select>
+    </div>
+
+      <input type="text" placeholder="Rechercher une commande...">
+      <button class="search-btn"> <i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="order-card">
+        <div class="order-header">
+          <div>
+            <span class="order-id">Commande #CMD-2024-001</span>
+          </div>
+          <div class="order-amount order-amount-blue">
+            <span class="order-status order-status-blue">En attente</span>
+            <h3>€1,199.00</h3>
+          </div>
+        </div>
+        <div class="order-info">
+          Client : <a href="#">jean Dupont</a><br>
+          Date : 15 Jan 2024
+        </div>
+        <div class="order-products">
+          <span class="product-icon"><i class="fa-solid fa-mobile"></i></span>
+          <span class="product-name">"iphone 15 Pro"</span>
+          <span class="product-desc">128GB-Bleu</span>
+          <span class="qty">x1</span>
+          <span class="total"><h4>€1,199.00</h4></span>
+        </div>
+        <div class="order-actions">
+          <button class="btn btn-view"><span><i class="fa-solid fa-eye"></i></span> Voir détails</button>
+          <button class="btn btn-edit1"><span><i class="fa-solid fa-pencil"></i></span> Modifier</button>
+          <button class="btn btn-action"><span><i class="fa-solid fa-check"></i></span> Traiter</button>
+        </div>
+      </div>
+    <div class="order-card">
+        <div class="order-header">
+          <div>
+            <span class="order-id">Commande #CMD-2024-002</span>
+          </div>
+          <div class="order-amount order-amount-blue">
+            <span class="order-status order-status-blue">En cours</span>
+           <h3>€2,899.00</h3>
+          </div>
+        </div>
+        <div class="order-info">
+          Client : <a href="#">Marie Martin</a><br>
+          Date : 14 Jan 2024
+        </div>
+        <div class="order-products">
+          <span class="product-icon"> <i class="fa-solid fa-laptop"></i></span>
+          <span class="product-name">MacBook Pro 16"</span>
+          <span class="product-desc">M3 Pro - 512GB</span>
+          <span class="qty">x1</span>
+          <span class="total"><h4>€2,899.00</h4></span>
+        </div>
+        <div class="order-actions">
+          <button class="btn btn-view"><span><i class="fa-solid fa-eye"></i></span> Voir détails</button>
+          <button class="btn btn-edit1"><span><i class="fa-solid fa-pencil"></i></span> Modifier</button>
+          <button class="btn btn-action1"><span><i class="fa-solid fa-truck"></i></span> Expédier</button>
+        </div>
+      </div>
+      
+      <div class="order-card">
+        <div class="order-header">
+          <div>
+            <span class="order-id">Commande #CMD-2024-003</span>
+          </div>
+          <div class="order-amount order-amount-blue">
+            <span class="order-status order-status-purple">Expédiée</span>
+           <h3>€558.00</h3>
+          </div>
+        </div>
+        <div class="order-info">
+          Client : <a href="#">Pierre Durand</a><br>
+          Date : 13 Jan 2024
+        </div>
+        <div class="order-products">
+          <span class="product-icon"> <i class="fa-solid fa-headphones"></i></span>
+          <span class="product-name">AirPods Pro 2</span>
+          <span class="product-desc">USB-C</span>
+          <span class="qty">x2</span>
+          <span class="total"><h4>€558.00</h4></span>
+        </div>
+        <div class="order-actions">
+          <button class="btn btn-view"><span><i class="fa-solid fa-eye"></i></span> Voir détails</button>
+          <button class="btn btn-action1"><span><i class="fa-solid fa-location-dot"></i></span>suivre</button>
+          <button class="btn btn-action"><span><i class="fa-solid fa-circle-check"></i></span> Marquer comme Livré</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

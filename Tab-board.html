@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord</title>
+    <link rel="stylesheet" href="Tab-board.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main-content">
+    
+        <main>
+           
+            <div class="dashboard-header">
+                <h1>Tableau de Bord Principal</h1>
+                <p>Gestion des stocks de produits électroniques</p>
+            </div>
+            <div class="statistics">
+                <button>
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <span>
+                        <h1>1,234</h1>
+                        <p>Produits en stock</p>
+                    </span>
+                </button>
+                <button>
+                   <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span>
+                        <h1>23</h1>
+                        <p>Stock faible</p>
+                    </span>
+                </button>
+                <button>
+                    <i class="fa-solid fa-euro-sign"></i>
+                    <span>
+                        <h1>€45,678</h1>
+                        <p>Valeur Totale</p>
+                    </span>
+                </button>
+                <button>
+                    <i class="fa-solid fa-truck"></i>
+                    <span>
+                        <h1>12</h1>
+                        <p>Commandes en attente</p>
+                    </span>
+                </button>
+            </div>
+            <div class="tab-header">
+                <h2>Gestion des Stocks</h2>
+
+                <div class="search-bar">
+                    <i class="fas fa-magnifying-glass icon-search"></i>
+                    <input type="text" placeholder=" Rechercher un produit...">
+                </div>
+                <div class="buttons">
+                    <button><i class="fas fa-plus icon-plus"></i> Ajouter un produit</button>
+                    <button><i class="fas fa-download icon-download"></i> Explorer</button>
+                </div>
+             </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>produit</th>
+                        <th>catégorie</th>
+                        <th>Stock</th>
+                        <th>Prix</th>
+                        <th>Statut</th>
+                        <th>Actions</th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>
+                            <div class="product-info">
+                                <i class="fa-solid fa-laptop"></i>
+                                <span>
+                                    <h3>MacBook Pro 16"</h3>
+                                    <p>Apple-M3 pro</p>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="bleu"><p>Laptop</p></td>
+                        <td class="vert"><p>15</p></td>
+                        <td><p>2,899 €</p></td>
+                        <td class="vert"><p>Actif</p></td>
+                        <td>
+                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>
+                            <div class="product-info">
+                                <i class="fa-solid fa-mobile"></i>
+                                <span>
+                                    <h3>Iphone 15 Pro</h3>
+                                    <p>Apple - 128GB</p>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="vert"><p>Smartphone</p></td>
+                        <td class="orange"><p>8</p></td>
+                        <td><p>1,199 €</p></td>
+                        <td class="vert"><p>Actif</p></td>
+                        <td>
+                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#003</td>
+                        <td>
+                            <div class="product-info">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>
+                                    <h3>AirPods Pro 2</h3>
+                                    <p>Apple - USB-C</p>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="orange"><p>AUDIO</p></td>
+                        <td class="rose"><p>3</p></td>
+                        <td><p>279 €</p></td>
+                        <td class="orange"><p>Stock faible</p></td>
+                        <td>
+                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#004</td>
+                        <td>
+                            <div class="product-info">
+                                <i class="fa-solid fa-tablet"></i>
+                                <span>
+                                    <h3>Ipad Air"</h3>
+                                    <p>Apple - 64GB</p>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="violet"><p>Tablette</p></td>
+                        <td class="vert"><p>22</p></td>
+                        <td><p>649 €</p></td>
+                        <td class="vert"><p>Actif</p></td>
+                        <td>
+                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#005</td>
+                        <td>
+                            <div class="product-info"> 
+                                <i class="fa-solid fa-tv"></i>
+                                <span>
+                                    <h3>Apple TV 4K"</h3>
+                                    <p>128GB - Wifi</p>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="rose"><p>TV</p></td>
+                        <td class="orange"><p>12</p></td>
+                        <td><p>179 €</p></td>
+                        <td class="vert"><p>Actif</p></td>
+                        <td>
+                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    
+        </main>
+       </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport</title>
+<link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rapport.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header-title1">
+    <div class="header-title">
+      <span class="icon"> <i class="fa-solid fa-chart-line"></i></span>
+      Rapport & Analytics
+    </div>
+    <div class="subtitle">Génération et consultations des rapports détaillés</div>
+  </div>
+    <div  class="content">
+    <div class="top-select">
+            <div>
+                <label for="">Type de rapport:</label>
+                <select name="" id="">
+                    <option value="">Rapport des Ventes</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Période:</label>
+                <select name="" id="">
+                    <option value="">Ce mois</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Format:</label>
+                <select name="" id="">
+                    <option value="">PDF</option>
+                </select>
+            </div>
+            <div>
+                <button>Générer le rapport</button>
+            </div>
+        </div>
+    <div class="header-card">
+        <div class="card-1">
+            <div class="top-icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="card-content">
+                <h2>Ventes du mois</h2>
+                <div class="card-main">
+                    <div>
+                        <h3>€45,678</h3>
+                        <p>Chiffres d'affaires</p>
+                    </div>
+                    <div>
+                        <h3>+12,5%</h3>
+                        <p>vs mois dernier</p>
+                    </div>
+                </div>
+                <div>
+                    <button>Voir détails</button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="card-2">
+            <div class="top-icon">
+                <i class="fa-solid fa-boxes-stacked"></i>
+            </div>
+            <div class="card-content">
+                <h2>Etat du stock</h2>
+                <div class="card-main">
+                    <div>
+                        <h3>1,234</h3>
+                        <p>Articles en stock</p>
+                    </div>
+                    <div>
+                        <h3>23</h3>
+                        <p>Stock faible</p>
+                    </div>
+
+                </div>
+                <div>
+                    <button>Voir détails</button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="card-3">
+            <div class="top-icon">
+            <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="card-content">
+                <h2>Clients</h2>
+                <div class="card-main">
+                    <div>
+                        <h3>856</h3>
+                        <p>Nouveaux Clients</p>
+                    </div>
+                    <div>
+                        <h3>2,345</h3>
+                        <p>Total clients</p>
+                    </div>
+                </div>
+                <div>
+                    <button>Voir détails</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="tab-content">
+    <div class="table"> 
+    <table>
+        <div class="tab-header">
+            <h3>Historique des Rapports</h3>
+            </div>
+        <thead>
+            <tr>
+                <th>Nom du rapport</th>
+                <th>Type</th>
+                <th>Date de génération</th>
+                <th>Statut</th>
+                <th>Actions</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rapport_ventes_janvier_2024.pdf</td>
+                <td>
+                    <div>
+                            <p>Ventes</p>
+                    </div>
+                </td>
+                <td>15 jan 2024</td>
+                <td>Términé</td>
+                <td>
+                    <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button><i class="fa-solid fa-trash"></i></button>
+                </td>
+            </tr>
+           <tr>
+                <td>Stock_inventair_janvier_2024.xlsx</td>
+                <td>
+                    <div>
+                            <p>Stock</p>
+                    </div>
+                </td>
+                <td>14 jan 2024</td>
+                <td>Términé</td>
+                <td>
+                    <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button><i class="fa-solid fa-trash"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>Rapport_financier_trimestre.xlsx</td>
+                <td>
+                    <div>
+                            <p>Financier</p>
+                    </div>
+                </td>
+                <td>En cours...</td>
+                <td>En cours</td>
+                <td>
+                    <button><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button><i class="fa-solid fa-trash"></i></button>
+                </td>
+
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+</body>
+
+</html>

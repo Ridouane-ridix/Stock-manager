@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(11, 48, 83, 1) 35%, rgba(23, 70, 111, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15rem;
+    color: #9DA2A2;
+}
+main{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 15px 12px 99px -16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 960px;
+}
+form{
+text-align: center;
+padding: 3rem;
+flex: 1.5;
+}
+h1{
+    margin-bottom: 1rem;
+    color: #215382;
+}
+.checkbox{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    gap: 8px;
+}
+div.checkbox input{
+    margin-bottom: 0;
+    
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-self: center;
+    margin-bottom: 4px;
+  
+
+}
+.input input{
+    padding: 10px;
+    border-radius: 4px;
+    border: solid 1px;
+    color: #9DA2A2;
+    margin-bottom: 1rem;
+}
+button{
+    width: 40%;
+    padding: 9px;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    background-color: #215382;
+    margin-bottom: 1rem;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.card-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.card-footer p{
+    color: #181313a8;
+}
+.card-footer a{
+    color: #215382;
+    text-decoration: none;
+}
+section{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #090979;
+    background: linear-gradient(159deg, rgba(11, 48, 83, 1) 35%, rgba(23, 70, 111, 1) 100%);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;  
+    flex: 1;
+}
+.logo{
+    background-color: #fff;
+    color: #215382;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.logo h1{
+margin-bottom: 0;
+}

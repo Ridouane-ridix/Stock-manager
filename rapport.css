@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: aliceblue;
+}
+.header-title1{
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-top: 1rem;
+      gap: 1rem;
+}
+.header-title .icon {
+    font-size: 1.3em;
+}
+.content{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-select{
+    display: flex;
+    gap: 1rem;
+    width: 92%;
+    padding: 1rem;
+    margin-top: 3rem;
+    background-color: white;
+    border-radius: 12px;
+}
+.top-select div{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.top-select div select{
+    padding: 8px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+}
+.top-select div:nth-child(4){
+    justify-content: flex-end;
+    align-items: self-start;
+    width: 100px;
+
+}
+.top-select div:nth-child(4) button{
+background-color: rgb(53, 53, 202);
+color: white;
+width: 150px;
+border: none;
+padding: 12px;
+border-radius: 8px;
+}
+    .header-title {
+    display: flex;
+    gap: 8px;
+    font-size: 2.2rem;
+    align-items: start;
+    justify-content: start;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.header-title1{
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-top: 1rem;
+      gap: 1rem;
+      
+}
+.header-title,
+.icon {
+    font-size: 2.2rem;
+}
+.header-card{
+    display: flex;
+    background-color: aliceblue;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 3rem;
+}
+.card-1,
+.card-2,
+.card-3{
+    display: flex;
+    background-color: white;
+    width: 350px;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.card-1  h3, 
+.card-2 h3, 
+.card-3 h3{
+color: #235EE9;
+}
+.card-1  h2, 
+.card-2 h2, 
+.card-3 h2{
+margin-bottom: 1rem;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+     margin-left: 1rem;
+
+}
+.card-main{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;  
+}
+.card-1 button,
+.card-2 button,
+.card-3 button{
+background-color: white;
+border: solid 1px;
+padding: 10px;
+border-radius: 7px;
+}
+.top-icon{
+    background-color: #235EE9;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+}
+.top-icon i{
+    color: white;
+    font-size: 1.5em;
+}
+.tab-content{
+  max-width:   1200px;
+  display: flex;
+  padding: 48px;
+}
+.table{
+     background-color: white;
+     width: 1200px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+}
+table{
+    width: 1100px;
+    border-collapse: collapse;
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+    justify-self: center;
+    padding-left: 4rem;
+    box-shadow: var(--box-shadow-light);
+}
+
+thead tr {
+    background-color: #67a1f709;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.2s;
+}
+
+th,
+td {
+    padding: 12px 15px;
+}
+
+/* Lignes du corps */
+tbody tr {
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.2s;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Colonne Produit (pour centrer l'icône et le texte) */
+td[data-label="Produit"]>div {
+    display: flex;
+    align-items: center;
+
+}
+
+td[data-label="Produit"] i {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+td[data-label="Produit"] h3 {
+    font-size: 1em;
+    margin-bottom: 2px;
+}
+
+td[data-label="Produit"] p {
+    font-size: 0.8em;
+    color: var(--text-light);
+}
+
+/* Colonne Statut */
+td[data-label="Statut"] {
+    font-weight: bold;
+}
+
+/* Styles des statuts */
+td[data-label="Statut"]:is([data-label="Statut"][data-value="Actif"], [data-value="Actif"]) {
+    color: var(--success-color);
+}
+
+td[data-label="Statut"]:is([data-label="Statut"][data-value="Stock faible"], [data-value="Stock faible"]) {
+    color: var(--warning-color);
+}
+
+/* Si les statuts sont codés en texte brut comme dans l'HTML */
+td[data-label="Statut"]:not([data-value]):not(:empty) {
+    /* Style par défaut pour les statuts non-codés (utile pour la démo) */
+    text-transform: capitalize;
+}
+
+/* Détection de texte pour la démo (moins robuste, mais fonctionne sans JS/backend) */
+td[data-label="Statut"]:contains("Actif") {
+    color: var(--success-color);
+}
+
+td[data-label="Statut"]:contains("Stock faible") {
+    color: var(--warning-color);
+}
+
+/* Colonne Actions */
+td[data-label="Actions"] button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 1em;
+    padding: 5px;
+    transition: color 0.2s;
+}
+td button{
+    background-color: white;
+    border: none;
+}
+td button i{
+    font-size: 16px;
+}
+td[data-label="Actions"] button:first-child i {
+    /* Éditer */
+    color: var(--primary-color);
+}
+
+td[data-label="Actions"] button:last-child i {
+    /* Supprimer */
+    color: var(--danger-color);
+}
+
+td[data-label="Actions"] button:hover {
+    transform: scale(1.1);
+}
+.tab-header{
+    width:  100%;
+    background-color: #F7F9FB;
+    padding: 1rem 0px 1rem 19px;
+    margin-bottom: 1rem ;
+}

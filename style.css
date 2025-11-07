@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+@media (max-width: 768px){
+    div.side-bare{
+        display: none;
+        position: absolute;
+    }
+}
+/* --- Barre latérale --- */
+.side-bare {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 15rem;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+
+}
+
+.side-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: rgb(6, 4, 76);
+    border-bottom: solid 1px;
+}
+
+.main {
+    align-self: start;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(6, 4, 76);
+}
+
+.main nav ul {
+    list-style: none;
+}
+
+.main nav ul a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.main nav ul a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-top: solid  1px;
+    background-color: rgb(6, 4, 76);
+}
+
+.Adm {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: rgba(58, 88, 116, 0.416);
+}
+
+.Adm span {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 8px;
+    width: 100%;
+    background-color: rgba(58, 88, 116, 0.416);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.content {
+    margin-left: 15rem;
+    width: calc(100% - 15rem);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+iframe#contenu {
+    flex: 1;
+    border: none;
+    width: 100%;
+    background-color: #f9f9f9;
+}
