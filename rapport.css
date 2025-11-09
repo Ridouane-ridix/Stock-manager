@@ -58,9 +58,14 @@ body{
 }
 .top-select div{
     display: flex;
+}
+.top-select div button{
+    cursor: pointer;
+    }
+.top-select div:nth-child(4){  
     justify-content: end;
     align-items: end;
-}
+    }
 main{
     display: flex;
     flex-direction: column;
