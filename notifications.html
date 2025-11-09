@@ -12,7 +12,7 @@
 <body>
     <header>
             <div class="notications-header">
-                <h1>Notifications & Alerts</h1>
+                <h1><i class="fa-solid fa-bell"></i> Notifications & Alerts</h1>
                 <p>Centre de notifications et gestion des alertes système</p>
             </div>
     </header>
@@ -20,6 +20,7 @@
         <div class="main-header-card">
             <div class="card">
                 <div class="card-content">
+                    <i class="fa-solid fa-envelope"></i>
                     <span>
                         <h3>12</h3>
                         <p>Non lues</p>
@@ -28,6 +29,7 @@
             </div>
             <div class="card">
                 <div class="card-content">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
                     <span>
                         <h3>3</h3>
                         <p>Urgentes</p>
@@ -36,6 +38,7 @@
             </div>
             <div class="card">
                 <div class="card-content">
+                    <i class="fa-solid fa-calendar-day"></i>
                     <span>
                         <h3>23</h3>
                         <p>Aujourd'hui</p>
@@ -44,6 +47,7 @@
             </div>
             <div class="card">
                 <div class="card-content">
+                    <i class="fa-solid fa-list"></i>
                     <span>
                         <h3>156</h3>
                         <p>Total</p>
@@ -70,13 +74,13 @@
                     <option value="">Toutes</option>
                 </select>
             </div>
-            <div>
-                <button>Filtrer</button>
+            <div class="filter-btn">
+                <button> <i class="fa-solid fa-filter"></i> Filtrer</button>
             </div>
         </div>
     <div class="order-card1">
-    <i class="fa-solid fa-chart-line"></i>
         <div class="order-header">
+            <i class="fa-solid fa-triangle-exclamation"></i>
           <div>
             <h3>Stock critique détecté</h3>
             <p>Le produit "AirPods Pro2" a atteint le seuil critique de stock(3 unités restantes). Veuillez passer commande rapidement</p>
@@ -85,12 +89,12 @@
                 <button class="btn-btn-edit">Marquer comme lu</button>
             </div>
           </div>
-          <span class="total"><h4>Il y'a 5 minutes</h4></span>
         </div>
+        <span class="total"><h4>Il y'a 5 minutes</h4></span>
       </div>
     <div class="order-card2">
-    <i class="fa-solid fa-chart-line"></i>
         <div class="order-header">
+            <i class="fa-solid fa-circle-info"></i>
           <div>
             <h3>Nouvelle commande reçue</h3>
             <p>Commande #CMD-2024-004 reçue de Marie Dubois pour un MacbookPro 16" (€2,899.00)</p>
@@ -99,12 +103,12 @@
                 <button class="btn-btn-edit">Marquer comme lu</button>
             </div>
           </div>
-          <span class="total"><h4>Il y'a 15 minutes</h4></span>
         </div>
+        <span class="total"><h4>Il y'a 15 minutes</h4></span>
       </div>
     <div class="order-card3">
-         <i class="fa-solid fa-chart-line"></i>
         <div class="order-header">
+            <i class="fa-solid fa-circle-check"></i>
           <div>
             <h3>Stock critique détecté</h3>
             <p>Commande #CMD-2024-003 a été expédiée avec succés. Numéro de suivi; FR123456789</p>
@@ -112,7 +116,50 @@
                 <button class="envoie">Suivre l'envoi</button>
             </div>
           </div>
-          <span class="total"><h4>Il y'a 1 heure</h4></span>
+         
+        </div>
+        <span class="total"><h4>Il y'a 1 heure</h4></span>
+      </div>
+    <div class="order-card4">
+        <div class="order-header">
+            <i class="fa-solid fa-gear"></i>
+          <div>
+            <h3>Sauvegarde automatique terminée</h3>
+            <p>Sauvegarde quotidienne des données terminée avec succés. 2.3 GB de données sauvegardées.</p>
+            <div class="order-actions">
+                <button class="details">Voir les détails</button>
+            </div>
+          </div>
+         
+        </div>
+        <span class="total"><h4>Il y'a 2 heure</h4></span>
+      </div>
+    <div class="order-card5">
+        <div class="order-header">
+            <i class="fa-solid fa-shield"></i>
+          <div>
+            <h3>Connexion depuis un nouvel appareil</h3>
+            <p>Connexion détectée depuis un nouvel appareil (iphone, paris, france). Si ce n'est pas vous, changer votre mot de passe.</p>
+            <div class="order-actions">
+                <button class="securiter">Sécuriser le compte</button>
+            </div>
+          </div>
+         
+        </div>
+        <span class="total"><h4>Il y'a 3 heure</h4></span>
+      </div>
+      <div class="order-card6">
+        <div>
+            <input type="checkbox" name="" id="">
+            <label for="">Sélectionner tout</label>
+        </div>
+        <div>
+            <button>
+                <i class="fa-solid fa-check"></i> Marquer comme lu
+            </button>
+            <button>
+                <i class="fa-solid fa-trash"></i> Supprimer
+            </button>
         </div>
       </div>
     </main>    

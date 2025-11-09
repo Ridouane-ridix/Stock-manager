@@ -43,9 +43,12 @@ body {
 
 main {
     width: 100%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 /* --- 3. En-tête de la Page (main-header) --- */
@@ -96,14 +99,16 @@ main {
     display: flex;
     align-items: center;
     background-color: var(--card-background);
-    /* Fond blanc */
+    
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    /* Rayon modéré pour le look de l'image */
     padding: 8px 12px;
     box-shadow: var(--box-shadow-light);
     flex-grow: 0;
-    /* Ne pas étirer */
+}
+.search-bar:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
 }
 
 .search-bar .icon-search {
@@ -168,7 +173,9 @@ main {
 .statistics {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 34px;
+    width: 100%;
+    height: 100px;
     margin-bottom: 40px;
 }
 
@@ -180,9 +187,9 @@ main {
     border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 20px;
+    width: fit-content;
     text-align: left;
     cursor: default;
-    /* Changé de pointer à default */
     box-shadow: var(--box-shadow-light);
     transition: box-shadow 0.3s, transform 0.2s;
 }
@@ -192,8 +199,9 @@ main {
     justify-content: space-between;
     background-color: #ffffff;
     align-items: center;
-    height: 62px;
-    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem 1rem;
     border-radius: 10px 10px 0px 0px;
 
 }

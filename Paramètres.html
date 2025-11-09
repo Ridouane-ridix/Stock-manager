@@ -14,15 +14,19 @@
     <div class="main-content">
     </div>
     <div class="Paramètres-header">
-        <h1>Tableau de Bord Principal</h1>
-        <p>Gestion des stocks de produits électroniques</p>
+        <i class="fa-solid fa-gears"></i> 
+        <div>
+            <h1> Paramètres & configurations</h1>
+            <p>configuration du Système et préférences utilisateur</p>
+        </div>
     </div>
     <main>
         <div class="top-content">
-            <div>
-            <h2>Paramètres Généraux</h2>
-        </div>
         <div class="card-content">
+            <div class="h2-content">
+                <h2> <i class="fa-solid fa-sliders"></i> Paramètres Généraux</h2>
+                </div>
+
             <div class="top-content2">
                 <div class="card">
                     <div>
@@ -64,10 +68,8 @@
             <div>
                 <select>
                     <option value="1">Français</option>
-                    <option value="1">Anglais</option>
-                    <option value="1">Français</option>
-                    <option value="1">Français</option>
-                    <option value="1"></option>
+                    <option value="1">English</option>
+                    <option value="1">Español</option>
                 </select>
             </div>
         </div>
@@ -75,110 +77,112 @@
        
         </div>
         <div class="first-content">
-        <div>
-            <h2>Paramètres Généraux</h2>
-        </div>
         <div class="card-content2">
-             <div class="card">
-            <div>
-                <h3>Seuil d'alerte</h3>
-                <p>Nombre minimum d'articles avat alerte</p>
+            <div class="h2-content">
+                <h2> <i class="fa-solid fa-boxes-stacked"></i> Gestion des Stocks</h2>
             </div>
-            <div>
-                    <input type="number">
+             <div class="card-container">
+                <div class="card">
+                    <div>
+                        <h3>Seuil d'alerte</h3>
+                        <p>Nombre minimum d'articles avat alerte</p>
+                    </div>
+                    <div>
+                            <input type="number">
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>Auto-commande</h3>
+                        <p>Commander automatiquement en cas de stock faible</p>
+                    </div>
+                    <label class="switch" for="auto_order">
+                        <input type="checkbox" name="auto_order" id="auto_order">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+        
+                <div class="card">
+                    <div>
+                        <h3>Devise</h3>
+                        <p>Devise d'affichage</p>
+                    </div>
+                    <div>
+                        <select class="currency-select">
+                            <option value="1">euro (€)</option>
+                            <option value="1">Dollar ($)</option>
+                            <option value="1">Livre Sterling (£)</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div>
-                <h3>Auto-commande</h3>
-                <p>Commander automatiquement en cas de stock faible</p>
-            </div>
-            <label class="switch" for="auto_order">
-                <input type="checkbox" name="auto_order" id="auto_order">
-                <span class="slider"></span>
-            </label>
-        </div>
 
-        <div class="card">
-            <div>
-                <h3>Devise</h3>
-                <p>Devise d'affichage</p>
-            </div>
-            <div>
-                <select>
-                    <option value="1">$euro</option>
-                    <option value="1">Anglais</option>
-                    <option value="1">Français</option>
-                    <option value="1">Français</option>
-                    <option value="1">Français</option>
-                </select>
-            </div>
-        </div>
-        </div>
-       
         </div>
         <div class="tree-content">
-        <div>
-            <h2>Sécurité</h2>
-        </div>
         <div class="card-content3">
-             <div class="card">
-            <div>
-                <h3>Authentificationà deux facteurs</h3>
-                <p>Activer la 2FA pour plus de Sécurité</p>
+            <div class="h2-content">
+                <h2> <i class="fa-solid fa-shield"></i> Sécurité</h2>
             </div>
-            <div>
-                    <button>Activer</button>
+            <div class="card-container">
+                <div class="card">
+                    <div>
+                        <h3>Authentification à deux facteurs</h3>
+                        <p>Activer la 2FA pour plus de Sécurité</p>
+                    </div>
+                <div>
+                        <button>Activer</button>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div>
-                <h3>Changer le mot de passe</h3>
-                <p>Modifier lemot de passe actuel</p>
+            <div class="card">
+                <div>
+                    <h3>Changer le mot de passe</h3>
+                    <p>Modifier lemot de passe actuel</p>
+                </div>
+                <div>
+                    <button>Changer</button>
+                </div>
             </div>
-            <div>
-                <button>Changer</button>
+    
+            <div class="card">
+                <div>
+                    <h3>Sessions actives</h3>
+                    <p>Gérer les Sessions connctées</p>
+                </div>
+                <div>
+                        <button>Voir (3)</button>
+                </div>
             </div>
-        </div>
-
-        <div class="card">
-            <div>
-                <h3>Sessions actives</h3>
-                <p>Gérer les Sessions connctées</p>
             </div>
-            <div>
-                    <button>Voir (3)</button>
-            </div>
-        </div>
         </div>
        
         </div>
         <div class="footer-content">
-        <div>
-            <h2>Système</h2>
-        </div>
         <div class="card-content">
-             <div class="card">
-            <div class="footer1">
-                <h3>Sauvegarder la configuration</h3>
+            <div class="h2-content">
+                <h2> <i class="fa-solid fa-database"></i> Système</h2>
             </div>
-        </div>
-        <div class="card">
-            <div class="footer2">
-                <h3>Exporter les Paramètres</h3>
-            </div>
-        </div>
-        <div class="card">
-            <div class="footer2">
-                <h3>Rénitialiser par défaut</h3>
-            </div>
-        </div>
-        <div class="card">
-            <div class="footer2">
-                <h3>Effacer toutes les données</h3>
-            </div>
-        </div>
-        </div>
+            <div class="card-container">
+                    <div class="card">
+                        <div class="footer1">
+                            <h3> <i class="fa-solid fa-floppy-disk"></i> Sauvegarder la configuration</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="footer2">
+                            <h3> <i class="fa-solid fa-download"></i> Exporter les Paramètres</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="footer">
+                            <h3> <i class="fa-solid fa-rotate-left"></i> Rénitialiser par défaut</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="footer">
+                            <h3> <i class="fa-solid fa-trash"></i> Effacer toutes les données</h3>
+                        </div>
+                    </div>
+         </div>
     </main>
 </body>
 </html>

@@ -3,31 +3,46 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-color: #EFEFEF;
 }
 
 body {
     height: auto;
-    background-color: aliceblue;
-    padding: 2rem;
+    background-color: #F9FAFC;
 }
 
 .main-content {
     padding: 20px;
 }
 
-.Paramètre-header {
+.Paramètres-header {
     margin-bottom: 30px;
+    padding: 1rem;
+    display: flex;
+align-items: center;
+    width: 100%;
+    gap: 10px;
 }
 
-.Paramètre-header h1 {
+.Paramètres-header h1 {
     font-size: 2.2em;
     margin-bottom: 5px;
+}
+.Paramètres-header p {
+    color: gray;
+    font-size: 0.9em;
+}
+.Paramètres-header i {
+    font-size: 2.2em;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    background-color: aliceblue;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
 
 }
 
@@ -35,27 +50,40 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
+    width: 100%;
+}
+.top-content .card2:last-child {
+    margin-bottom: 1rem;
+    width: 364px;
 }
 
-.top-content .card:last-child select {
-    width: 100px;
-    padding: 2px;
-
-}
-
-.card-content{
+div.card-content{
     background-color: #fff;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 1rem;
     margin-bottom: 3rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 46px -21px rgba(0, 0, 0, 0.1);
 
 
 }
-.card-content:nth-child() {
-    background-color: #f9f9f9;
+.h2-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: #F9FAFC;
+    padding: 1rem;
+}
+
+.currency-select {
+    width: 120px;
+    padding: 5px;
+  
 }
 .top-content2{
     display: flex;
@@ -68,7 +96,7 @@ main {
     width: auto;
 }
 .card, .card2 {
-    border: solid 1px;
+    border: solid 1px #EBEBEB;
     border-radius: 7px;
     width: 500px;
     height: 100px;
@@ -78,17 +106,41 @@ main {
     justify-content: space-between;
     align-items: center;
 }
+.card2 select {
+    width: 100px;
+    padding: 2px;
+}
 .card2 {
     margin: 0px 10px;
     width: 348px;
 }
-.card div h3 {
+.card-content2 h3,
+.card-content3 h3 {
     margin-bottom: 8px;
     font-size: 16px;
 }
 .card div p {
     font-size: 14px;
     color: gray;
+}
+.card-container {
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.first-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.tree-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 .tree-content .card:last-child button {
     background-color: rgba(9, 137, 176, 0.93);
@@ -99,12 +151,13 @@ main {
 }
  .card-content2, .card-content3  {
     background-color: #fff;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
     width: 100%;
-    gap: 1rem;
     margin-bottom: 3rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 46px -21px rgba(0, 0, 0, 0.1);
 }
 .card-content2 .card, .card-content3 .card {
     width: 100%;
@@ -115,7 +168,12 @@ main {
     border-radius: 5px;
     border: solid 1px;
 }
-
+.card input[type="number"] {
+    width: 70px;
+    padding: 3px;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
 .tree-content .card:nth-child(1) button {
     background-color: rgba(233, 227, 227, 0.686);
     padding: 8px 18px 8px 18px;
@@ -124,15 +182,15 @@ main {
 }
 
 .footer-content .card:first-child {
-    background-color: blue;
+    background-color: #3375EF;
     color: #fff;
 }
 
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 40px;
+    height: 22px;
 }
 
 .switch input {
@@ -155,10 +213,10 @@ main {
 .slider::before {
     content: "";
     position: absolute;
-    height: 26px;
-    width: 26px;
+    height: 16px;
+    width: 16px;
     left: 4px;
-    bottom: 4px;
+    bottom: 3.5px;
     background-color: white;
     transition: 0.4s;
     border-radius: 50%;
@@ -170,5 +228,40 @@ input:checked+.slider {
 }
 
 input:checked+.slider::before {
-    transform: translateX(26px);
+    transform: translateX(20px);
+}
+.footer-content .card {
+    border: solid 1px;
+    border-radius: 7px;
+    font-size: 16px;
+    width: 500px;
+    height: 30px;
+    padding: 1rem;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-content .card h3 {
+    margin-bottom: 0px;
+    font-size: 13px;
+}
+.footer-content .card:nth-child(2){
+    border: solid 1px #EBEBEB;
+}
+.footer-content .card:nth-child(3),
+.footer-content .card:last-child {
+    background-color: #F3F3F3;
+    border: none;
+}
+.card:hover,
+.card2:hover {
+   background-color: #F9FAFC;
+   border: solid 1px #286FEE;
+}
+@media (max-width: 102) {
+    
+}
+.card, .card2 {
+   
 }
