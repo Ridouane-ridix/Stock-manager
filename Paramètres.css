@@ -148,6 +148,7 @@ div.card-content{
     border-radius: 5px;
     color: white;
     border: none;
+    cursor: pointer;
 }
  .card-content2, .card-content3  {
     background-color: #fff;
@@ -167,6 +168,7 @@ div.card-content{
     padding: 8px 18px 8px 18px;
     border-radius: 5px;
     border: solid 1px;
+    cursor: pointer;
 }
 .card input[type="number"] {
     width: 70px;
@@ -179,6 +181,7 @@ div.card-content{
     padding: 8px 18px 8px 18px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 .footer-content .card:first-child {
@@ -258,10 +261,4 @@ input:checked+.slider::before {
 .card2:hover {
    background-color: #F9FAFC;
    border: solid 1px #286FEE;
-}
-@media (max-width: 102) {
-    
-}
-.card, .card2 {
-   
 }

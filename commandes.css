@@ -364,3 +364,399 @@ flex-direction: column;
     }
 }
 
+.order-details-container {
+    width: 450px;
+    background-color: #ffffff;
+    
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+.detail-contener{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    backdrop-filter: blur(3px);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#order-details-container:target{
+    left: 0;
+    transition: left 0.3s;
+}
+/* --- Sections (Info Client, Articles) --- */
+.section {
+    padding: 15px 20px;
+}
+
+.order-info-section {
+    padding-bottom: 0; /* Pas de séparation visuelle directe pour les infos commande */
+}
+
+.section-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #1a0ef5;
+}
+
+/* Styles des informations (Client/Commande) */
+.info-group {
+    display: flex;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 2px;
+}
+
+.value {
+    font-size: 14px;
+    color: #333;
+}
+
+.bold-value {
+    font-weight: bold;
+}
+
+/* --- Articles Commandés --- */
+.articles-section {
+    padding-bottom: 5px; /* Réduit l'espace avant le footer */
+}
+
+.article-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 8px;
+    background-color: #f7f9fc; /* Fond bleu très clair comme dans l'image */
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.article-item:hover {
+    background-color: #eef2f8;
+}
+
+.item-icon {
+    font-size: 18px;
+    margin-right: 15px;
+    align-self: flex-start; /* Aligne l'icône au début */
+    padding-top: 3px;
+}
+
+.item-details {
+    flex-grow: 1; /* Prend l'espace restant */
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.item-specs {
+    font-weight: normal;
+    color: #555;
+}
+
+.item-variant {
+    font-size: 12px;
+    color: #777;
+}
+
+.item-quantity {
+    width: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.item-price, .item-total {
+    width: 90px; /* Largeur fixe pour l'alignement */
+    text-align: right;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.item-price {
+    color: #666;
+    font-weight: normal;
+}
+
+/* --- Pied de page et Boutons d'Action --- */
+.footer-actions {
+    display: flex;
+    justify-content: flex-end; /* Aligne les boutons à droite */
+    padding: 15px 20px;
+    border-top: 1px solid #eee; /* Optionnel, pour séparer visuellement */
+    background-color: #fff;
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Bleu fort */
+    color: white;
+    border: 1px solid #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    background-color: #ffffff; /* Fond légèrement plus clair si nécessaire */
+}
+
+.title-close {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 0 8px;
+}
+
+.fa-eye {
+    font-size: 20px;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+.edit-modal-container {
+    width: 450px; /* Largeur du modal */
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    overflow: hidden;
+    /* La position relative est nécessaire pour que les éléments enfants positionnés (comme la barre de scroll simulée) fonctionnent */
+    position: relative; 
+}
+
+/* --- En-tête (Modifier la Commande) --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.title-close {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 0 8px;
+}
+
+.fa-pen-to-square {
+    color: #333;
+    font-size: 20px;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+}
+
+/* --- Sections du formulaire --- */
+.edit-form {
+    padding: 0 20px 20px 20px; /* Espace autour du formulaire */
+}
+
+.section {
+    padding-top: 15px;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* --- Groupes de Formulaire --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #333;
+    /* Effet d'ombre intérieure */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075); 
+}
+
+.form-control:focus {
+    border-color: #88aadd;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Statut Dropdown */
+.status-dropdown {
+    height: 35px;
+}
+
+/* Textearea Adresse */
+.textarea-address {
+    resize: vertical;
+    min-height: 40px;
+    padding-right: 25px; /* Pour simuler l'espace de redimensionnement */
+}
+
+/* Date Input Group */
+.date-group {
+    margin-top: 15px;
+}
+
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon .form-control {
+    padding-right: 35px; /* Pour faire de la place à l'icône */
+}
+
+.calendar-icon {
+    position: absolute;
+    right: 10px;
+    color: #999;
+    pointer-events: none; /* Empêche l'icône de bloquer les clics sur l'input */
+}
+
+/* Notes Section */
+.textarea-notes {
+    min-height: 50px;
+    font-style: italic;
+    color: #999;
+}
+.footer-actions {
+    display: flex;
+    justify-content: flex-end; /* Aligne les boutons à droite */
+    padding: 15px 20px;
+    border-top: 1px solid #eee; /* Optionnel, pour séparer visuellement */
+    background-color: #fff;
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.btn-secondary:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Bleu fort */
+    color: white;
+    border: 1px solid #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.édit-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    backdrop-filter: blur(3px);
+
+}
