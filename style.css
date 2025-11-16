@@ -10,13 +10,33 @@ body {
     display: flex;
     font-family: 'Poppins', sans-serif;
 }
-@media (max-width: 768px){
-    div.side-bare{
-        display: none;
-        position: absolute;
-    }
+.header-icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
-/* --- Barre latérale --- */
+.header-icons span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.header-icons span i{
+    font-size: 1.5rem;
+    color: rgb(50, 50, 54, 0.691);
+    cursor: pointer;
+}
+.header-icons span:last-child i{
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(50, 50, 54, 0.691);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
 .side-bare {
     display: flex;
     flex-direction: column;
@@ -125,6 +145,9 @@ header {
     gap: 1rem;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    margin: 0 !important;
+    height: 55.5px !important;
 }
 
 iframe#contenu {

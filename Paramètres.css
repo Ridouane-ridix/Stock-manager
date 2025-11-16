@@ -262,3 +262,60 @@ input:checked+.slider::before {
    background-color: #F9FAFC;
    border: solid 1px #286FEE;
 }
+@media (max-width: 1024px) {
+    .card,
+    .card2 {
+        width: 100%;
+    }
+    main {
+        padding: 1rem;
+    }
+    div.top-content2  h3 {
+        font-size: 14px !important;
+        margin-bottom: 0;
+        padding: 0.5rem 0;
+    }
+    div.top-content2  p {
+        font-size: 12px !important;
+        margin-bottom: 0;
+        padding: 0.5rem 0;
+    }
+    div.top-content2 .card {
+        margin: 0 5px;
+    }
+    .slider::before {
+        height: 12px;
+        width: 12px;
+        left: 4px;
+        bottom: 5px;
+    }
+    .top-content2  p {
+        width: 100px;
+    }
+    div.card2 h3{
+        font-size: 14px !important;
+        margin-bottom: 0;
+        padding: 0.5rem 0;
+        
+    }
+    div.card2 p {
+        font-size: 12px !important;
+        margin-bottom: 0;
+        padding: 0.5rem 0;
+    }
+    .card-container h3 {
+        font-size: 14px !important;
+        width: 100%;
+    }
+    .card-container p {
+        font-size: 12px !important;
+        width: 100px;
+    }
+
+    .card-container h3 {
+        font-size: 12px !important;
+    }
+    .card-container  {
+        gap: 1rem;
+    }
+}

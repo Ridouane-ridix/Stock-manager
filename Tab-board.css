@@ -420,3 +420,31 @@ td button i {
     color: #5F5E93;
     padding: 5px 10px;
 }
+
+@media (max-width: 1024px) {
+    .main-content {
+        padding: 0px;
+    }
+    td,
+    th {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+   .statistics button i{
+    font-size: 20px !important;
+
+   }
+   .statistics button h1{
+       font-size: 20px !important;
+   }
+   .statistics button {
+    width: fit-content;
+    padding: 10px;
+   }
+   .dashboard-header h1{
+    font-size: 1.5em !important;
+   }
+   .tab-header h2{
+    font-size: 1.2em !important;
+   }
+}

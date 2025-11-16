@@ -370,3 +370,32 @@ flex-direction: column;
   font-size: 1.2em;
   vertical-align: middle;
 }
+@media (max-width: 1024px) {
+  div.card  {
+    height: fit-content;
+    width: 160px !important ;
+    padding: 10px !important;
+  }
+  .card-content h2 {
+    font-size: 1.2rem !important;
+
+  }
+  .card-icons1,
+  .card-icons2,
+  .card-icons3,
+  .card-icons4 {
+    padding: 8px !important;
+    margin: 0 !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 5px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: fit-content !important;
+  }
+  .main-content{
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+}
