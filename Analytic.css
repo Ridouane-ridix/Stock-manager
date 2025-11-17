@@ -5,6 +5,7 @@
       font-family: 'Inter', Arial, sans-serif;
       color: #24292f;
       width: 100%;
+      padding: 5px;
     }
     .main-content{
       display: flex;
@@ -373,8 +374,9 @@ flex-direction: column;
 @media (max-width: 1024px) {
   div.card  {
     height: fit-content;
-    width: 160px !important ;
+    width: 90% !important ;
     padding: 10px !important;
+    gap: 12px;
   }
   .card-content h2 {
     font-size: 1.2rem !important;
@@ -397,5 +399,16 @@ flex-direction: column;
   .main-content{
     width: 100% !important;
     padding: 1rem !important;
+  }
+}
+@media (max-width: 768px){
+  .top-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .top-products-header{
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

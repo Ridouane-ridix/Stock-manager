@@ -10,6 +10,7 @@ body {
     display: flex;
     font-family: 'Poppins', sans-serif;
 }
+
 .header-icons{
     display: flex;
     align-items: center;
@@ -23,7 +24,7 @@ body {
 }
 .header-icons span i{
     font-size: 1.5rem;
-    color: rgb(50, 50, 54, 0.691);
+    color: rgb(50, 50, 54);
     cursor: pointer;
 }
 .header-icons span:last-child i{
@@ -249,11 +250,7 @@ main{
     width: 100%;
     margin-bottom: 1rem;
 }
-span{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+
 input{
     width: 100%;
     color: black;
@@ -320,4 +317,17 @@ input{
     align-items: center;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+td.xmark{
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    .side-bare{
+        display: none;
+    }
+    .content{
+        margin-left: 0;
+        width: 100%;
+    }
+  
 }

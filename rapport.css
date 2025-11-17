@@ -27,6 +27,7 @@ body{
     justify-self: center;
     align-items: center;
     flex-direction: column;
+    gap: 2rem;
 }
 
 .top-select{
@@ -103,7 +104,7 @@ border-radius: 8px;
 }
 .header-card{
     display: flex;
-    background-color: aliceblue;
+
     justify-content: space-between;
     width: 100%;
     gap: 25px;
@@ -293,7 +294,7 @@ td[data-label="Actions"] button:hover {
 }
 .tab-header{
     width:  100%;
-    background-color: #F7F9FB;
+    background-color: #ffffff;
     padding: 1rem 0px 1rem 19px;
     margin-bottom: 1rem ;
 }
@@ -323,5 +324,18 @@ td[data-label="Actions"] button:hover {
         height: 40px;
         width: 40px;
         
+    }
+}
+@media (max-width: 768px) {
+    .top-select{
+        flex-direction: column !important;
+        align-items: flex-end;
+    }
+    .header-card{
+        flex-direction: column;
+    }
+    .table{
+        display: flex;
+        flex-direction: column;
     }
 }

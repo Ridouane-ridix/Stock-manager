@@ -256,9 +256,12 @@ flex-direction: column;
 .order-id {
     font-size: 1.15em;
     font-weight: 700;
-    margin-bottom: 3px;
+    margin-bottom: 1rem;
 }
-
+.ZZ{
+    display: flex;
+    flex-direction: column;
+}
 .order-status {
     font-size: 16px;
     font-weight: 500;
@@ -269,7 +272,7 @@ flex-direction: column;
 .order-amount {
     color: #2363dd;
     font-weight: 700;
-    font-size: 1.32em;
+    font-size: 16px;
     min-width: 130px;
     display: flex;
     flex-direction: column ;
@@ -745,4 +748,33 @@ a{
 }
 .btn-edit1 a{
     color: black;
+}
+@media (max-width: 768px){
+    .stats-row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .filters-row{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .fli1,
+    .fli1 select{
+        width: 100%;
+    }
+    .fli2{
+        align-self: flex-start;
+    }
+
+    .order-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .order-amount{
+        text-align: start ;
+    }
+    .info-group{
+        flex-direction: column;
+    }
 }

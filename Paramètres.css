@@ -319,3 +319,22 @@ input:checked+.slider::before {
         gap: 1rem;
     }
 }
+@media (max-width: 768px){
+    .top-content2{
+        flex-direction: column;
+    }
+    div.card2{
+        width: 99% !important;
+        margin: 0;
+        margin-inline: 5px;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    .card p{
+        width: 100%;
+    }
+    .card{
+        width: 100% !important;
+    }
+}

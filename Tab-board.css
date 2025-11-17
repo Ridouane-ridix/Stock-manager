@@ -34,6 +34,7 @@ body {
     background-color: var(--background-light);
     color: var(--text-dark);
     line-height: 1.6;
+    height: auto;
 }
 
 /* --- 2. Conteneur Principal --- */
@@ -69,7 +70,9 @@ main {
 .main-header input[type="text"]:focus {
     border-color: var(--primary-color);
 }
-
+.dashboard-header{
+    margin-left: 1rem;
+}
 .main-header {
     padding: 10px 15px;
     border: none;
@@ -430,6 +433,7 @@ td button i {
         padding: 8px 10px;
         font-size: 0.9em;
     }
+
    .statistics button i{
     font-size: 20px !important;
 
@@ -447,4 +451,31 @@ td button i {
    .tab-header h2{
     font-size: 1.2em !important;
    }
+}
+@media (max-width: 768px){
+
+    .statistics {
+        display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: auto;
+        }
+        .statistics button{
+            width: 100%;
+            height: 100px;
+            padding: 2rem;
+        }
+        .statistics i{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .statistics h1{
+            font-size: 25px;
+        }
+        .tab-header{
+            flex-direction: column;
+            align-items: flex-start;
+        }
 }
