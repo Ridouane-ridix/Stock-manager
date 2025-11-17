@@ -174,129 +174,80 @@ border-radius: 7px;
      align-items: center;
      border-radius: 10px;
 }
-table{
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 0px 0px 10px 10px;
-    overflow: hidden;
-    justify-self: center;
-    box-shadow: var(--box-shadow-light);
+.report-history {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  width: 100%;
+  font-family: "Inter", sans-serif;
 }
 
-thead tr {
-    background-color: #67a1f709;
-    text-align: left;
-    font-weight: bold;
-    border-bottom: 1px solid #e9ecef;
-    transition: background-color 0.2s;
+.report-history h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #1e293b;
 }
 
-th,
-td {
-    padding: 12px 15px;
+.report-row {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 1fr 1fr 0.6fr;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #e2e8f0;
+  gap: 10px;
 }
 
-/* Lignes du corps */
-tbody tr {
-    border-bottom: 1px solid #e9ecef;
-    transition: background-color 0.2s;
+.report-row:last-child {
+  border-bottom: none;
 }
 
-tbody tr:last-child {
-    border-bottom: none;
+.report-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-tbody tr:hover {
-    background-color: #f8f9fa;
+.icon {
+  font-size: 20px;
+  color: #2563eb;
 }
 
-/* Colonne Produit (pour centrer l'icône et le texte) */
-td[data-label="Produit"]>div {
-    display: flex;
-    align-items: center;
-
+.loading {
+  color: #64748b;
 }
 
-td[data-label="Produit"] i {
-    font-size: 1.5em;
-    margin-right: 10px;
-    color: var(--primary-color);
+.name {
+  font-weight: 500;
+  color: #1e293b;
 }
 
-td[data-label="Produit"] h3 {
-    font-size: 1em;
-    margin-bottom: 2px;
+.type, .date {
+  color: #475569;
 }
 
-td[data-label="Produit"] p {
-    font-size: 0.8em;
-    color: var(--text-light);
+.status {
+  font-weight: 600;
 }
 
-/* Colonne Statut */
-td[data-label="Statut"] {
-    font-weight: bold;
+.status.terminé {
+  color: #16a34a;
 }
 
-/* Styles des statuts */
-td[data-label="Statut"]:is([data-label="Statut"][data-value="Actif"], [data-value="Actif"]) {
-    color: var(--success-color);
+.status.encours {
+  color: #d97706;
 }
 
-td[data-label="Statut"]:is([data-label="Statut"][data-value="Stock faible"], [data-value="Stock faible"]) {
-    color: var(--warning-color);
+.actions i {
+  font-size: 18px;
+  margin-left: 12px;
+  cursor: pointer;
+  color: #475569;
+  transition: 0.2s;
 }
 
-/* Si les statuts sont codés en texte brut comme dans l'HTML */
-td[data-label="Statut"]:not([data-value]):not(:empty) {
-    /* Style par défaut pour les statuts non-codés (utile pour la démo) */
-    text-transform: capitalize;
-}
-
-/* Détection de texte pour la démo (moins robuste, mais fonctionne sans JS/backend) */
-td[data-label="Statut"]:contains("Actif") {
-    color: var(--success-color);
-}
-
-td[data-label="Statut"]:contains("Stock faible") {
-    color: var(--warning-color);
-}
-
-/* Colonne Actions */
-td[data-label="Actions"] button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin-right: 5px;
-    font-size: 1em;
-    padding: 5px;
-    transition: color 0.2s;
-}
-td button{
-    background-color: white;
-    border: none;
-}
-td button i{
-    font-size: 16px;
-}
-td[data-label="Actions"] button:first-child i {
-    /* Éditer */
-    color: var(--primary-color);
-}
-
-td[data-label="Actions"] button:last-child i {
-    /* Supprimer */
-    color: var(--danger-color);
-}
-
-td[data-label="Actions"] button:hover {
-    transform: scale(1.1);
-}
-.tab-header{
-    width:  100%;
-    background-color: #ffffff;
-    padding: 1rem 0px 1rem 19px;
-    margin-bottom: 1rem ;
+.actions i:hover {
+  color: #1e293b;
 }
 
 @media (max-width: 1024px) {
