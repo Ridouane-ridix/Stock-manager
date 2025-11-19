@@ -106,7 +106,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 1rem;
+    padding: 10px;
     border-radius: 6px;
     background-color: rgba(58, 88, 116, 0.416);
 }
@@ -172,7 +172,7 @@ form{
     height: 100vh;
     top: 0;
     position: fixed;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,12 +185,13 @@ form{
 display: flex;
 justify-content: space-between;
 align-items: center;
+flex-shrink: 0;
 }
 .card-header h2 i{
     color: white;
     background-color: rgb(0, 0, 0);
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -201,17 +202,17 @@ align-items: center;
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: 20px;
 }
 .card{
     display: flex;
-    background-color: white;
-    flex-direction: column;
-    justify-content: center;
-    width: 420px;
-    height: 80%;
-    align-items: center;
-    border-radius: 10px 0px 0px 10px;
-    overflow: hidden;
+        background-color: white;
+        flex-direction: column;
+        width: 420px;
+        height: 450px;
+        border-radius: 10px 0px 0px 10px;
+        overflow-y: auto;
+        /* Le scroll sur toute la card */
 }
 
 .Rôle{
@@ -305,6 +306,7 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1rem;
 }
 .Profil-ic i{
     font-size: 2rem;
@@ -318,10 +320,49 @@ input{
     border-radius: 50%;
     margin-bottom: 1rem;
 }
-td.xmark{
-    text-align: center;
+.menu{
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
-@media screen and (max-width: 768px){
+.menu input{
+    margin: 0;
+}
+.label-menu{
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.label-menu span{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+#menu-bar{
+    display: none;
+}
+.side-header i{
+    color: blue;
+}
+.Adm p{
+    font-size: 14px;
+}
+.Adm i{
+    background-color: blue;
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.Adm h3{
+    font-size: 17px;
+}
+@media (max-width: 768px){
     .side-bare{
         display: none;
     }
@@ -329,5 +370,13 @@ td.xmark{
         margin-left: 0;
         width: 100%;
     }
-  
+    .input-content{
+        flex-direction: column;
+    }
+    .menu{
+        display: flex;
+    }
+  header{
+    padding: 1rem;
+  }
 }

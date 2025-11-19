@@ -62,6 +62,11 @@ padding: 12px;
 border-radius: 8px;
 
 }
+.order-text-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .order-card1,
 .order-card2,
 .order-card3,
@@ -85,6 +90,14 @@ border-radius: 8px;
 .order-card2{
         border-left: solid rgb(0, 72, 255) 5px;
 }
+.order-card2 div,
+.order-card3 div,
+.order-card4 div,
+.order-card5 div{
+    width: 100%;
+}
+
+
 .order-header{
         display: flex;
             justify-content: space-between;
@@ -299,4 +312,37 @@ button{
         height: 100px;
         display: flex;
     }
+
+}
+@media (max-width: 768px){
+    .main-header-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        width: 100%;
+    }
+    .top-select{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .top-select div, 
+    .top-select div select{
+        width: 100%;
+    }
+    .filter-btn
+     button{
+        width: 100%;
+    }
+    div.filter-btn{
+        width: 100% !important;
+    }
+    div.order-header{
+        flex-direction: column !important;
+    }
+    .order-text-content{
+        flex-direction: column;
+        align-items: self-start;
+    }
+
 }

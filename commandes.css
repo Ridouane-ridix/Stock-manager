@@ -349,11 +349,12 @@ flex-direction: column;
 .order-details-container {
     width: 450px;
     background-color: #ffffff;
-    
+    height: 500px;
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
     overflow: hidden;
+    overflow-y: auto;
 }
 .detail-contener{
     display: flex;
@@ -571,7 +572,8 @@ a{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
     overflow: hidden;
-    /* La position relative est nécessaire pour que les éléments enfants positionnés (comme la barre de scroll simulée) fonctionnent */
+    height: 500px;
+    overflow-y: auto;
     position: relative; 
 }
 
