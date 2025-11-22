@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    background-color: aliceblue;
+    background-color: #F4F7F6;
     display: flex;
     font-family: 'Poppins', sans-serif;
 }
@@ -38,6 +38,7 @@ body {
     align-items: center;
     border-radius: 50%;
 }
+
 .side-bare {
     display: flex;
     flex-direction: column;
@@ -46,6 +47,7 @@ body {
     height: 100vh;
     width: 15rem;
     color: white;
+    z-index: 100;
     position: fixed;
     left: 0;
     top: 0;
@@ -63,8 +65,11 @@ body {
     padding: 1rem;
     background-color: rgb(6, 4, 76);
     border-bottom: solid 1px;
+    transition: none;
 }
-
+.button-footer2 button{
+    background-color: rgba(255, 0, 0, 0.174);
+}
 .main {
     align-self: start;
     height: 100%;
@@ -320,29 +325,8 @@ input{
     border-radius: 50%;
     margin-bottom: 1rem;
 }
-.menu{
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-.menu input{
-    margin: 0;
-}
-.label-menu{
-    width: 25px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.label-menu span{
-    width: 25px;
-    height: 3px;
-    background-color: black;
-}
-#menu-bar{
-    display: none;
-}
+
+
 .side-header i{
     color: blue;
 }
@@ -362,9 +346,27 @@ input{
 .Adm h3{
     font-size: 17px;
 }
+#menu,
+.menu-button,
+.sidebar-overlay{
+    display: none;
+}
+.menu-button {
+    background-color:   white;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 1rem 0px;
+    height: 55px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+
+}
+
 @media (max-width: 768px){
     .side-bare{
-        display: none;
+        left: -15rem;
+        transition: left 0.3s;
     }
     .content{
         margin-left: 0;
@@ -373,8 +375,23 @@ input{
     .input-content{
         flex-direction: column;
     }
-    .menu{
-        display: flex;
+    .menu-button{
+        display: block;
+    }
+    #menu:checked  ~ .side-bare{
+        left: 0;
+    }
+
+        #menu:checked  ~ .sidebar-overlay{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: 0, 0, 0, 0.5;
+        z-index: 99;
+        cursor: pointer;
     }
   header{
     padding: 1rem;
