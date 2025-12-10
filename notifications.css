@@ -66,6 +66,7 @@ border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 .order-card1,
 .order-card2,
@@ -90,10 +91,12 @@ border-radius: 8px;
 .order-card2{
         border-left: solid rgb(0, 72, 255) 5px;
 }
+
 .order-card2 div,
 .order-card3 div,
 .order-card4 div,
-.order-card5 div{
+.order-card5 div,
+.order-card1 div{
     width: 100%;
 }
 
